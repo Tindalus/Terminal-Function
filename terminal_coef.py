@@ -1,15 +1,14 @@
 import math
 
-def term(x_end,x_initial,T):
+def term(x_initial,x_end,T):
     """
     **Returns list of polinomial coefficients for the terminal function x(t) = ΣCi*t^i**
     \n At the end of the function user can uncomment polinomial visualization
     
     Args:
-        x_end (list[float]): list (n,1) of end state, n element is the coordinate of the end point and n-i's element is i's derivative of that coordinate
+        x_initial (list[float]): list (n,1) of initial state, 1 element is the coordinate of the end point and every next element is i's derivative of that coordinate
 
-        x_initial (list[float]): list (n,1) of initial state, n element is the coordinate of the initial point and n-i's element is i's derivative of that coordinate
-
+        x_end (list[float]): list (n,1) of end state, 1 element is the coordinate of the end point and every next element is i's derivative of that coordinate
         
         T (float): termial time when curve reaches its end coordinate
     Returns:
